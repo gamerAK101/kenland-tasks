@@ -1,0 +1,28 @@
+<form class="w-4/12" [formGroup]="addItemForm" (ngSubmit)="onSubmit()">
+    <p style="font-size:20px; font-weight:500">Add Items Here</p>
+
+
+    <div class="pt-4">
+        <input
+            [ngClass]="addItemForm.get('email')?.invalid && addItemForm.get('email')?.touched?' border-red-500':''"
+            (blur)="addItemForm.get('email')?.markAsTouched" formControlName="email"
+            style="transition: .3s;" placeholder="Email Id"
+            class="w-full border text-thin rounded-md border-gray-200 px-3 py-3 outline-2  focus:outline-sky-600">
+        <p *ngIf="addItemForm.get('email')?.invalid && addItemForm.get('email')?.touched"
+            class="text-sm pt-1 text-red-500">Enter Valid Email-Id</p>
+    </div>
+    
+    <div class="pt-4">
+        <input type="password"
+            [ngClass]="addItemForm.get('password')?.invalid && addItemForm.get('password')?.touched?' border-red-500':''"
+            (blur)="addItemForm.get('password')?.markAsTouched" formControlName="password"
+            style="transition: .3s;" placeholder="Password"
+            class="w-full border text-thin rounded-md border-gray-200 px-3 py-3 outline-2  focus:outline-sky-600">
+        <p *ngIf="addItemForm.get('password')?.invalid && addItemForm.get('password')?.touched"
+            class="text-sm pt-1 text-red-500">Enter Valid Password</p>
+    </div>
+
+
+<button type="submit" [disabled]="!addItemForm.valid" class="{{addItemForm.valid?'bg-green-600':'bg-gray-400'}} text-center w-full text-white rounded-lg py-2 mt-3">Add this product</button>
+
+</form>

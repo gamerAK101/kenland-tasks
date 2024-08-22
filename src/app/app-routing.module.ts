@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LandingScreenComponent } from './landing-screen/landing-screen.component';
 import { MyItemsComponent } from './my-items/my-items.component';
+import { AddItemsComponent } from './add-items/add-items.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path : 'my-items',
         component :  MyItemsComponent
+      },
+      {
+        path : 'add-items',
+        component :  AddItemsComponent
       }
     ]
   }

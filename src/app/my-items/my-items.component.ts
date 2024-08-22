@@ -8,7 +8,7 @@ import { DataSharingService } from '../services/data-sharing.service';
 })
 export class MyItemsComponent {
 
-  dataPerPage=5;
+  dataPerPage=8;
   currentPage=1;
   totalPages = 0;
 
@@ -30,12 +30,17 @@ export class MyItemsComponent {
       
       this.totalPages = Number(Math.floor(this.data.length/this.dataPerPage))+1;
     }
-    
-    alert(this.totalPages.toFixed(0));
   }
 
   createRange(number: number){
     return new Array(number).fill(0).map((_, i) => i + 1);
+  }
+
+  selectPage(pageNo:any){
+    this.currentPage = pageNo;
+    // alert(this.currentPage)
+    console.log(this.data);
+    
   }
 
 

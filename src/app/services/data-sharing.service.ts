@@ -9,9 +9,9 @@ export class DataSharingService {
   constructor() { }
   sample =[
     {
-      name : 'sdfsfsfsdfsdf',
+      name : 'sdfsf',
       age:1,
-      city:'manhattandsfsdfsdfds'
+      city:'manh'
     },
     {
       name : 'sdfsfsfsdfsdf',
@@ -40,27 +40,132 @@ export class DataSharingService {
     },
     {
       name : 'sdfsfsfsdfsdf',
-      age:5,
+      age:7,
       city:'manhattandsfsdfsdfds'
     },
     {
       name : 'sdfsfsfsdfsdf',
-      age:6,
+      age:8,
       city:'manhattandsfsdfsdfds'
     },
     {
       name : 'sdfsfsfsdfsdf',
-      age:5,
+      age:9,
       city:'manhattandsfsdfsdfds'
     },
     {
       name : 'sdfsfsfsdfsdf',
-      age:6,
+      age:10,
       city:'manhattandsfsdfsdfds'
     },
     {
       name : 'sdfsfsfsdfsdf',
-      age:6,
+      age:11,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:12,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:13,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:14,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:15,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:16,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:17,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:18,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:19,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:20,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:21,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:22,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:23,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:24,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:25,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:26,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:27,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:29,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:29,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:30,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:31,
+      city:'manhattandsfsdfsdfds'
+    },
+    {
+      name : 'sdfsfsfsdfsdf',
+      age:32,
       city:'manhattandsfsdfsdfds'
     },
   ]
