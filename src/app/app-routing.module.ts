@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LandingScreenComponent } from './landing-screen/landing-screen.component';
-import { AppointmentComponent } from './appointment/appointment.component';
+import { MyItemsComponent } from './my-items/my-items.component';
 
 const routes: Routes = [
   {
@@ -14,8 +14,8 @@ const routes: Routes = [
         component : DashboardComponent
       },
       {
-        path : 'appointment',
-        component :  AppointmentComponent
+        path : 'my-items',
+        component :  MyItemsComponent
       }
     ]
   }

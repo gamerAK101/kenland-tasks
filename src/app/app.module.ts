@@ -7,7 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LandingScreenComponent } from './landing-screen/landing-screen.component';
-import { AppointmentComponent } from './appointment/appointment.component';
+import { MyItemsComponent } from './my-items/my-items.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,12 @@ import { AppointmentComponent } from './appointment/appointment.component';
     TopBarComponent,
     NavBarComponent,
     LandingScreenComponent,
-    AppointmentComponent
+    MyItemsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class TopBarComponent {
 
+  
+  createRange(number: number){
+    return new Array(number).fill(0).map((_, i) => i + 1);
+  }
 }
