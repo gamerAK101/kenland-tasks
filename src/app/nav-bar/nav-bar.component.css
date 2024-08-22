@@ -1,0 +1,17 @@
+.tab-active{
+    background-color: #F8F8F8;
+}
+
+.tab-active p{
+    color:#633EEB;
+}
+
+.tab-active svg{
+    color : #633EEB;
+}
+
+.tab-active div{
+    background-color: #633EEB;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
