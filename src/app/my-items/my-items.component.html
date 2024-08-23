@@ -57,7 +57,7 @@
 
   <div class="col-12 d-flex pt-3 justify-content-between align-items-center">
     <div>
-      <p>Showing data {{currentPage*dataPerPage-(dataPerPage-1)}} to {{currentPage*dataPerPage}} of {{data.length}} entries</p>
+      <p>Showing data {{currentPage*dataPerPage-(dataPerPage-1)}} to {{totalPages===1 || totalPages===data.length ?data.length: currentPage*dataPerPage}} of {{data.length}} entries</p>
     </div>
     <div class="d-flex">
       <div class="text-center  me-2"  style="width:25px;height:25px;border-radius:5px;background-color: #F7F7F7;" (click)="currentPage!=1?currentPage=currentPage-1:''" >
