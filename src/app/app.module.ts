@@ -13,6 +13,11 @@ import { AddItemsComponent } from './add-items/add-items.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { EditItemComponent } from './edit-item/edit-item.component';
+import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -24,14 +29,17 @@ import { ChildComponent } from './child/child.component';
     MyItemsComponent,
     AddItemsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    EditItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

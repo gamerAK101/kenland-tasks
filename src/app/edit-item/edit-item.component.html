@@ -1,0 +1,55 @@
+<form class="w-4/12 p-4" [formGroup]="editItemForm" (ngSubmit)="onSubmit()">
+    <div class="d-flex justify-content-between">
+        <p style="font-size:20px; font-weight:500">Edit Items Here</p>
+        <svg (click)="close()" style="width:20px;color:white;background-color:Red;border-radius:3px;cursor:pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          
+    </div>
+
+
+    <div class="pt-4">
+        <input
+            [ngClass]="editItemForm.get('itemName')?.invalid && editItemForm.get('itemName')?.touched?'invalid-input':''"
+            (blur)="editItemForm.get('itemName')?.markAsTouched" formControlName="itemName"
+            style="transition: .3s;" placeholder="Item Name"
+            class="border rounded-md  px-3 py-3 w-100">
+        <p *ngIf="editItemForm.get('itemName')?.invalid && editItemForm.get('itemName')?.touched"
+            class="invalid-message">Item name should be atlest 3 characters</p>
+    </div>
+
+    <div class="pt-4">
+        <input
+            [ngClass]="editItemForm.get('itemCategory')?.invalid && editItemForm.get('itemCategory')?.touched?'invalid-input':''"
+            (blur)="editItemForm.get('itemCategory')?.markAsTouched" formControlName="itemCategory"
+            style="transition: .3s;" placeholder="Item Category"
+            class="border rounded-md  px-3 py-3 w-100">
+        <p *ngIf="editItemForm.get('itemCategory')?.invalid && editItemForm.get('itemCategory')?.touched"
+            class="invalid-message">Item Category should be atlest 3 characters</p>
+    </div>
+
+    <div class="pt-4">
+        <input
+            [ngClass]="editItemForm.get('brand')?.invalid && editItemForm.get('brand')?.touched?'invalid-input':''"
+            (blur)="editItemForm.get('brand')?.markAsTouched" formControlName="brand"
+            style="transition: .3s;" placeholder="Brand Name"
+            class="border rounded-md  px-3 py-3 w-100">
+        <p *ngIf="editItemForm.get('brand')?.invalid && editItemForm.get('brand')?.touched"
+            class="invalid-message">Brand Name should be atlest 3 characters</p>
+    </div>
+
+    <div class="pt-4">
+        <input type="number"
+            [ngClass]="editItemForm.get('price')?.invalid && editItemForm.get('price')?.touched?'invalid-input':''"
+            (blur)="editItemForm.get('itemName')?.markAsTouched" formControlName="price"
+            style="transition: .3s;" placeholder="Price"
+            class="border rounded-md  px-3 py-3 w-100">
+        <p *ngIf="editItemForm.get('price')?.invalid && editItemForm.get('price')?.touched"
+            class="invalid-message">Price should be greater than 0</p>
+    </div>
+    
+
+
+<button type="submit" [disabled]="!editItemForm.valid" class="{{editItemForm.valid?' btn-success':'btn-grey'}} btn text-center py-2 mt-3">Edit this item</button>
+
+</form>

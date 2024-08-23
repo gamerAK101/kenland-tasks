@@ -10,53 +10,72 @@ export class DataSharingService {
   sample =[
     {
       itemName : 'sdfsf',
+      itemCategory:'manh',
+      brand:'ssdfsf',
       price:1,
-      itemCategory:'manh'
+     
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:2,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:3,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:4,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:5,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:6,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:7,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:8,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:9,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
       price:10,
-      itemCategory:'manhattandsfsdfsdfds'
+      itemCategory:'manhattandsfsdfsdfds',
+      brand:'ssdfsf',
+
     },
     {
       itemName : 'sdfsfsfsdfsdf',
@@ -168,13 +187,79 @@ export class DataSharingService {
       price:32,
       itemCategory:'manhattandsfsdfsdfds'
     },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:21,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:22,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:23,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:24,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:25,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:26,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:27,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:29,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:29,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:30,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:31,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
+    {
+      itemName : 'sdfsfsfsdfsdf',
+      price:32,
+      itemCategory:'manhattandsfsdfsdfds'
+    },
   ]
   private allItems = new BehaviorSubject<any>(this.sample);
   data$ = this.allItems.asObservable();
 
-  updateData(data: any) {
+  addData(data: any) {
     const currentArray = this.allItems.getValue();
     currentArray.push(data);
+    this.allItems.next(currentArray);
+  }
+
+  updateData(data:any,i:number){
+    const currentArray = this.allItems.getValue();
+    currentArray[i]=data;
     this.allItems.next(currentArray);
   }
 }

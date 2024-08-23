@@ -9,6 +9,8 @@ export class ChildComponent {
   @Input() selectedItem: any;
   @Output() editEvent: EventEmitter<any> = new EventEmitter<any>();
 
+  isDisabled=true;
+
   constructor(){
       setTimeout(() => {
         this.emitUpdatedData();
@@ -16,7 +18,6 @@ export class ChildComponent {
   }
 
   emitUpdatedData() {
-    alert('')
-    this.editEvent.emit('hello');
+    this.editEvent.emit(this.selectedItem);
   }
 }

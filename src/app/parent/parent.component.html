@@ -1,9 +1,9 @@
 <div class="d-flex">
-    <div class="bg-white parent-container px-5 py-4 me-4">
+    <div class="bg-white parent-container px-5 py-4 me-4 col-5">
         <h2>This is the parent component</h2>
         <p class="pb-3">Items List</p>
         <div *ngFor="let x of items;index as i">
-            <p (click)="selectItem(x,i)" class="py-2 px-2 {{x.isSelect?'bg-light':''}}" style="font-weight:400;cursor:pointer">{{x.itemName}}</p>
+            <p (click)="selectItem(x,i)" class="py-2 px-2 {{x.isSelect?'bg-info':''}}" style="font-weight:400;cursor:pointer">{{x.itemName}}</p>
         </div>
     </div>
     <app-child [selectedItem]="this.selectedItem" (editEvent)="receiveChildData($event)"></app-child>

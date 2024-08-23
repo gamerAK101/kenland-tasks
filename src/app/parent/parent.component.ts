@@ -10,10 +10,10 @@ export class ParentComponent {
   selectedIndex=0;
   items=[
     {
-      itemName : 'Pen',
+      itemName : 'Rock',
       price:10,
       itemCategory:'Stationary',
-      description : 'lorem ipsum',
+      description : 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, id. Labore vel, deserunt dolores iure voluptatem reiciendis sequi. Sunt tempore consequuntur dicta veniam. Nulla, ullam quam quos magnam laboriosam minus.',
       isSelect:false
     },
     {
@@ -25,7 +25,7 @@ export class ParentComponent {
 
     },
     {
-      itemName : 'Stone',
+      itemName : 'Scissor',
       price:10,
       itemCategory:'Stationary',
       description : 'lorem ipsum',
@@ -46,7 +46,8 @@ export class ParentComponent {
   }
 
 
-  receiveChildData(eventData: any) {
-    console.log('Received event from child:', eventData);
+  receiveChildData(receivedData: any) {
+    
+  this.items[this.selectedIndex]=receivedData;
   }
 }

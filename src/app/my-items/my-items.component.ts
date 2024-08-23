@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { DataSharingService } from '../services/data-sharing.service';
+import { EditItemComponent } from '../edit-item/edit-item.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-my-items',
@@ -8,13 +10,13 @@ import { DataSharingService } from '../services/data-sharing.service';
 })
 export class MyItemsComponent {
 
-  dataPerPage=8;
+  dataPerPage=5;
   currentPage=1;
   totalPages = 0;
 
   data:any[]=[];
 
-  constructor(private dataSharingService:DataSharingService){
+  constructor(private dataSharingService:DataSharingService,public dialog: MatDialog){
     this.dataSharingService.data$.subscribe((data:any)=>{
       this.data=data;
       this.createPaginator();
@@ -42,6 +44,23 @@ export class MyItemsComponent {
     console.log(this.data);
     
   }
+
+  openEditItem(item:any,i:any){
+    const dialogRef = this.dialog.open(EditItemComponent, {
+      width: '400px', // Adjust the width as needed
+  
+      data: item
+    });
+  
+    dialogRef.afterClosed().subscribe((result:any) => {
+      
+      if(result){
+        this.dataSharingService.updateData(result,i);
+      }
+    });
+  }
+
+  
 
 
 }

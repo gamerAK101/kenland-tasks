@@ -13,10 +13,10 @@ th{
 td{
     font-weight:500;
     font-size:15px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top:18px;
+    padding-bottom:18px;
 }
 
-thead{
-    border-bottom:1px solid rgb(183, 183, 183);
+thead,tr{
+    border-bottom:1px solid rgb(220, 220, 220);
 }

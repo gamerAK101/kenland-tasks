@@ -1,0 +1,13 @@
+input{
+    outline:none!important;
+    border-radius: 5px;
+}
+
+.invalid-message{
+    color:rgba(255, 0, 0, 0.654);
+    font-size:11px;
+}
+
+.invalid-input{
+    border:1px solid red!important;
+}

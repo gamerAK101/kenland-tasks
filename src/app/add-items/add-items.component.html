@@ -33,7 +33,7 @@
     </div>
 
     <div class="pt-4">
-        <input
+        <input type="number"
             [ngClass]="addItemForm.get('price')?.invalid && addItemForm.get('price')?.touched?'invalid-input':''"
             (blur)="addItemForm.get('itemName')?.markAsTouched" formControlName="price"
             style="transition: .3s;" placeholder="Price"

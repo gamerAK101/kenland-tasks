@@ -1,7 +1,11 @@
 <div class="bg-white parent-container px-5 py-4 me-4">
     <h2>This is the child component</h2>
     <p class="pb-3">Item Details</p>
-    <div>
-        <input (change)="emitUpdatedData()"  class="py-2" style="font-weight:400" [value]="selectedItem.itemName">
+    <div class="d-flex align-items-center">
+        <p class="pe-1">Item Name : </p>
+        <input [(ngModel)]="selectedItem.itemName" (ngModelChange)="emitUpdatedData()" style="border:none" [disabled]="isDisabled" (change)="emitUpdatedData()"  class="py-2 me-2" style="font-weight:400;" [value]="selectedItem.itemName">
+        <p (click)="isDisabled=false" style="cursor:pointer">edit</p>
     </div>
+        <p class="pe-1 pt-3">Item Price : {{selectedItem.price}}</p>
+        <p class="pe-1 pt-3">Item Description : {{selectedItem.description}}</p>
 </div>
