@@ -11,3 +11,14 @@ input{
 .invalid-input{
     border:1px solid red!important;
 }
+
+.edit-item-head p{
+    font-size:20px;
+}
+
+.edit-item-head svg{
+    width:20px;
+    color:white;
+    background-color:Red;
+    border-radius:3px;
+}

@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { DataSharingService } from '../services/data-sharing.service';
+import { DataSharingService } from '../../services/data-sharing.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 

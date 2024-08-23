@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DataSharingService } from '../services/data-sharing.service';
-import { EditItemComponent } from '../edit-item/edit-item.component';
+import { EditItemComponent } from '../components/edit-item/edit-item.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({

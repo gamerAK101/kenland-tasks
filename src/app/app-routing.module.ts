@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { LandingScreenComponent } from './landing-screen/landing-screen.component';
 import { MyItemsComponent } from './my-items/my-items.component';
 import { AddItemsComponent } from './add-items/add-items.component';
 import { ParentComponent } from './parent/parent.component';
+import { OverviewComponent } from './overview/overview.component';
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
     children:[
       {
         path:'',
-        component : DashboardComponent
+        component : OverviewComponent
       },
       {
         path : 'my-items',
