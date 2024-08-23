@@ -4,25 +4,46 @@
 
     <div class="pt-4">
         <input
-            [ngClass]="addItemForm.get('email')?.invalid && addItemForm.get('email')?.touched?' border-red-500':''"
-            (blur)="addItemForm.get('email')?.markAsTouched" formControlName="email"
-            style="transition: .3s;" placeholder="Email Id"
-            class="w-full border text-thin rounded-md border-gray-200 px-3 py-3 outline-2  focus:outline-sky-600">
-        <p *ngIf="addItemForm.get('email')?.invalid && addItemForm.get('email')?.touched"
-            class="text-sm pt-1 text-red-500">Enter Valid Email-Id</p>
+            [ngClass]="addItemForm.get('itemName')?.invalid && addItemForm.get('itemName')?.touched?'invalid-input':''"
+            (blur)="addItemForm.get('itemName')?.markAsTouched" formControlName="itemName"
+            style="transition: .3s;" placeholder="Item Name"
+            class="border rounded-md  px-3 py-3">
+        <p *ngIf="addItemForm.get('itemName')?.invalid && addItemForm.get('itemName')?.touched"
+            class="invalid-message">Item name should be atlest 3 characters</p>
+    </div>
+
+    <div class="pt-4">
+        <input
+            [ngClass]="addItemForm.get('itemCategory')?.invalid && addItemForm.get('itemCategory')?.touched?'invalid-input':''"
+            (blur)="addItemForm.get('itemCategory')?.markAsTouched" formControlName="itemCategory"
+            style="transition: .3s;" placeholder="Item Category"
+            class="border rounded-md  px-3 py-3">
+        <p *ngIf="addItemForm.get('itemCategory')?.invalid && addItemForm.get('itemCategory')?.touched"
+            class="invalid-message">Item Category should be atlest 3 characters</p>
+    </div>
+
+    <div class="pt-4">
+        <input
+            [ngClass]="addItemForm.get('brand')?.invalid && addItemForm.get('brand')?.touched?'invalid-input':''"
+            (blur)="addItemForm.get('brand')?.markAsTouched" formControlName="brand"
+            style="transition: .3s;" placeholder="Brand Name"
+            class="border rounded-md  px-3 py-3">
+        <p *ngIf="addItemForm.get('brand')?.invalid && addItemForm.get('brand')?.touched"
+            class="invalid-message">Brand Name should be atlest 3 characters</p>
+    </div>
+
+    <div class="pt-4">
+        <input
+            [ngClass]="addItemForm.get('price')?.invalid && addItemForm.get('price')?.touched?'invalid-input':''"
+            (blur)="addItemForm.get('itemName')?.markAsTouched" formControlName="price"
+            style="transition: .3s;" placeholder="Price"
+            class="border rounded-md  px-3 py-3">
+        <p *ngIf="addItemForm.get('price')?.invalid && addItemForm.get('price')?.touched"
+            class="invalid-message">Price should be greater than 0</p>
     </div>
     
-    <div class="pt-4">
-        <input type="password"
-            [ngClass]="addItemForm.get('password')?.invalid && addItemForm.get('password')?.touched?' border-red-500':''"
-            (blur)="addItemForm.get('password')?.markAsTouched" formControlName="password"
-            style="transition: .3s;" placeholder="Password"
-            class="w-full border text-thin rounded-md border-gray-200 px-3 py-3 outline-2  focus:outline-sky-600">
-        <p *ngIf="addItemForm.get('password')?.invalid && addItemForm.get('password')?.touched"
-            class="text-sm pt-1 text-red-500">Enter Valid Password</p>
-    </div>
 
 
-<button type="submit" [disabled]="!addItemForm.valid" class="{{addItemForm.valid?'bg-green-600':'bg-gray-400'}} text-center w-full text-white rounded-lg py-2 mt-3">Add this product</button>
+<button type="submit" [disabled]="!addItemForm.valid" class="{{addItemForm.valid?' btn-success':'btn-grey'}} btn text-center py-2 mt-3">Add this product</button>
 
 </form>

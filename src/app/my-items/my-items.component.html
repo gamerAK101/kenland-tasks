@@ -7,23 +7,49 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table> -->
   <div class="bg-white p-5">
-    
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th class="text-center">Age</th>
-        <th class="text-center">City</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of data | slice:(currentPage-1)*this.dataPerPage:(currentPage-1)*this.dataPerPage+dataPerPage">
-        <td>{{ item.name }}</td>
-        <td class="text-center">{{ item.age }}</td>
-        <td  class="text-center">{{ item.city }}</td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="d-flex justify-content-between align-items-center">
+      <p style="font-weight:600;font-size:20px">My Items</p>
+      <div class="d-flex">
+        <div class="position-relative me-2">
+          <svg class="position-absolute" style="width:25px;left:15px;padding-top:5px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg> 
+          <input style="background-color: #F9FBFF; border:none;outline:none; border-radius:20px;width:130px" placeholder="search" class="ps-5 py-2 pe-1">
+        </div>
+        <p class="p-2 me-2" style="background-color: #F9FBFF; border-radius:5px">sort by :<span style="font-weight:500">Newest
+          <svg style="width:20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+        </span></p>
+        <button routerLink="/add-items" class="text-white px-2 py-1" style="background-color: #633EEB; border-radius:10px; border:none;font-size:17px">
+        <svg style="width:25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        Create Item
+        </button>
+      </div>
+    </div>
+    <div class="py-4">
+      <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th class="text-center">Age</th>
+            <th class="text-center">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data | slice:(currentPage-1)*this.dataPerPage:(currentPage-1)*this.dataPerPage+dataPerPage;index as i">
+            <td>#{{ (currentPage-1)*dataPerPage+i+1 }}</td>
+            <td>{{ item.itemName }}</td>
+            <td class="text-center">{{ item.price }}</td>
+            <td  class="text-center">{{ item.itemCategory }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+ 
 
   <div class="col-12 d-flex pt-3 justify-content-between align-items-center">
     <div>

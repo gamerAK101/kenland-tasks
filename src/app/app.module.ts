@@ -11,6 +11,8 @@ import { MyItemsComponent } from './my-items/my-items.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddItemsComponent } from './add-items/add-items.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavBarComponent,
     LandingScreenComponent,
     MyItemsComponent,
-    AddItemsComponent
+    AddItemsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

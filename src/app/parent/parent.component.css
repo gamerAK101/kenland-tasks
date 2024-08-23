@@ -1,0 +1,15 @@
+.parent-container{
+
+    border-radius:10px;
+    width:fit-content
+}
+
+.parent-container h2{
+    font-weight: 500;
+    font-size:20px;
+}
+
+.parent-container p{
+    font-weight: 300;
+    font-size:20px;
+}

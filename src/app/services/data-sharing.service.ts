@@ -9,170 +9,172 @@ export class DataSharingService {
   constructor() { }
   sample =[
     {
-      name : 'sdfsf',
-      age:1,
-      city:'manh'
+      itemName : 'sdfsf',
+      price:1,
+      itemCategory:'manh'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:2,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:2,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:3,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:3,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:4,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:4,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:5,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:5,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:6,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:6,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:7,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:7,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:8,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:8,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:9,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:9,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:10,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:10,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:11,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:11,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:12,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:12,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:13,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:13,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:14,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:14,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:15,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:15,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:16,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:16,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:17,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:17,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:18,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:18,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:19,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:19,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:20,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:20,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:21,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:21,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:22,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:22,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:23,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:23,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:24,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:24,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:25,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:25,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:26,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:26,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:27,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:27,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:29,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:29,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:29,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:29,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:30,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:30,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:31,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:31,
+      itemCategory:'manhattandsfsdfsdfds'
     },
     {
-      name : 'sdfsfsfsdfsdf',
-      age:32,
-      city:'manhattandsfsdfsdfds'
+      itemName : 'sdfsfsfsdfsdf',
+      price:32,
+      itemCategory:'manhattandsfsdfsdfds'
     },
   ]
   private allItems = new BehaviorSubject<any>(this.sample);
   data$ = this.allItems.asObservable();
 
   updateData(data: any) {
-    this.allItems.next(data);
+    const currentArray = this.allItems.getValue();
+    currentArray.push(data);
+    this.allItems.next(currentArray);
   }
 }
