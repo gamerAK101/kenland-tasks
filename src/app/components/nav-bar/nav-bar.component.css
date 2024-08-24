@@ -3,15 +3,14 @@
 }
 
 .tab-active p{
-    color:#633EEB;
+    color:var(--primary-purple);
 }
 
 .tab-active svg{
-    color : #633EEB;
-}
+    color:var(--primary-purple);}
 
 .tab-active div{
-    background-color: #633EEB;
+    background-color: var(--primary-purple);
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     display: block!important;

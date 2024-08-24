@@ -10,7 +10,7 @@
     <div class="d-flex justify-content-between align-items-center">
       <p class="my-items-head">My Items</p>
       <div class="d-flex">
-        <div class="position-relative me-2 searchInput">
+        <div class="position-relative me-2 search-input">
           <svg class="position-absolute" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
           </svg> 
@@ -21,8 +21,8 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </svg>
         </span></p>
-        <button routerLink="/add-items" class="text-white px-2 py-1 createButton" style="background-color: #633EEB; border-radius:10px; border:none;font-size:17px">
-        <svg style="width:25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <button routerLink="/add-items" class="text-white px-2 py-1 create-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
         </svg>
         Create Item
@@ -48,7 +48,7 @@
             <td  class="text-center">{{ item.itemCategory }}</td>
             <td  class="text-center">{{ item.brand }}</td>
             <td class="text-center">{{ item.price.toFixed(2) }}</td>
-            <td><button (click)="openEditItem(item,i)" class="text-white" style="border:none;background-color: #8c75de;border-radius: 5px;">edit</button></td>
+            <td><button (click)="openEditItem(item,i)" class="text-white edit-btn">edit</button></td>
           </tr>
         </tbody>
       </table>
@@ -60,24 +60,24 @@
       <p>Showing data {{currentPage*dataPerPage-(dataPerPage-1)}} to {{totalPages===1 || totalPages===data.length ?data.length: currentPage*dataPerPage}} of {{data.length}} entries</p>
     </div>
     <div class="d-flex">
-      <div class="text-center  me-2"  style="width:25px;height:25px;border-radius:5px;background-color: #F7F7F7;" (click)="currentPage!=1?currentPage=currentPage-1:''" >
+      <div class="text-center  me-2 pageButton"  style="background-color: var(--background-highlight);" (click)="currentPage!=1?currentPage=currentPage-1:''" >
         <svg style="width:10px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
         </svg>
         
       </div>
 
-          <div  class="text-center p-1 me-2 {{currentPage===i+1?'text-white':''}}" [ngStyle]="{'background-color': currentPage===i+1 ? '#5932EA' : '#F7F7F7' }" style="width:25px;height:25px;border-radius:5px" (click)="selectPage(i+1)" *ngFor="let x of createRange(this.totalPages>5?4:this.totalPages) ;index as i">
+          <div  class="text-center p-1 me-2 pageButton {{currentPage===i+1?'text-white':''}}" [ngStyle]="{'background-color': currentPage===i+1 ? '#5932EA' : 'var(--background-highlight)' }" (click)="selectPage(i+1)" *ngFor="let x of createRange(this.totalPages>5?4:this.totalPages) ;index as i">
               <p style="font-size:13px">{{i+1}}</p>
           </div>
           <div clas="me-2" *ngIf="totalPages>5">
             ...
           </div>
 
-          <div *ngIf="totalPages>5" class="text-center p-1 {{currentPage===totalPages?'text-white':''}}" [ngStyle]="{'background-color': currentPage===totalPages ? '#5932EA' : '#F7F7F7' }" style="width:25px;height:25px;border-radius:5px" (click)="selectPage(this.totalPages)">
+          <div *ngIf="totalPages>5" class="text-center p-1 pageButton {{currentPage===totalPages?'text-white':''}}" [ngStyle]="{'background-color': currentPage===totalPages ? '#5932EA' : 'var(--background-highlight)' }" (click)="selectPage(this.totalPages)">
             <p style="font-size:13px">{{totalPages}}</p>
         </div>
-          <div class="text-center  ms-2"  style="width:25px;height:25px;border-radius:5px;background-color: #F7F7F7;" (click)="currentPage!=totalPages?currentPage=currentPage+1:''" >
+          <div class="text-center  ms-2 pageButton"  style="background-color: var(--background-highlight);" (click)="currentPage!=totalPages?currentPage=currentPage+1:''" >
             <svg style="width:10px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>

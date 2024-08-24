@@ -30,13 +30,13 @@ thead,tr{
     font-size:20px
 }
 
-.searchInput svg{
+.search-input svg{
     width:25px;
     left:15px;
     padding-top:5px
 }
 
-.searchInput input{
+.search-input input{
     background-color: #F9FBFF;
     border:none;outline:none;
     border-radius:20px;
@@ -50,4 +50,28 @@ thead,tr{
 
 .sortInput svg{
     width:20px;
+}
+
+.create-button{
+    background-color: var(--primary-purple);
+    border-radius:7px;
+    border:none;
+    font-size:17px
+}
+
+.create-button svg{
+    width:25px;
+}
+
+.pageButton{
+    width:25px;
+    height:25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.edit-btn{
+    border:none;
+    background-color: var(--primary-purple);
+    border-radius: 5px;
 }
